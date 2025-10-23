@@ -1,0 +1,11 @@
+name: blackScholesPricer
+channels:
+  - defaults
+dependencies:
+  - python
+  - pandas
+  - dash
+  - plotly
+  - pip
+  - pip:
+      - QuantLib
