@@ -42,18 +42,18 @@ conda activate blackScholesPricer
 python app.py
 ```  
 Open your browser at: 
-http://127.0.0.1:8050
+http://127.0.0.1:8050  
   
-📸 Example Screenshot
+📸 Example Screenshot  
 ![App Preview](assets/preview.png)  
     
-📦 Dependencies
--Python ≥ 3.9  
--Dash  
--Plotly  
-QuantLib  
--Pandas  
--NumPy    
+📦 Dependencies  
+  Python ≥ 3.9  
+  Dash  
+  Plotly  
+  QuantLib  
+  Pandas  
+  NumPy    
   
 📜 License  
   
