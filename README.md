@@ -44,9 +44,7 @@ Create a Virtual Environment with Python (3.13.9), and activate it.
 ```bash
 pip install -r requirements.txt
 python app.py
-```
-
-### 3️⃣ Open your browser at: http://127.0.0.1:8050  
+```  
 
 ## 
 ## 📸 Example Screenshot  
