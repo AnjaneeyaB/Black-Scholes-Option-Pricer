@@ -1,6 +1,7 @@
 from dash import Dash, html, dcc, Input, Output
 from utils import BSMEuropeanContinuousDiscounting, HeatMap
 from plotly.express import imshow
+from os import environ
 
 app = Dash(__name__)
 
@@ -213,4 +214,5 @@ def update_prices(S, K, T, r, sigma, var_range, spot_range):
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    port = int(environ.get("PORT", 8050))
+    app.run_server(host="0.0.0.0", port=port, debug=False)
