@@ -14,53 +14,56 @@ Black-Scholes-Option-Pricer/
 ├── assets/  
 │ ├── style.css  
 │ └── preview.png  
-├── app.py  
-├── utils.py  
-├── environment.yml  
+│── app.py  
+│── utils.py  
+│── requirements.txt  
+│── environment.yml  
 └── README.md  
   
 ---  
   
 ## ⚙️ Installation  
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Using Conda
+```bash
+git clone https://github.com/AnjaneeyaB/Black-Scholes-Option-Pricer.git
+cd Black-Scholes-Option-Pricer
+conda env create -f environment.yml
+conda activate blackScholesPricer
+python app.py
+```
+  
+### 2️⃣ Using Pip
 ```bash
 git clone https://github.com/AnjaneeyaB/Black-Scholes-Option-Pricer.git
 cd Black-Scholes-Option-Pricer
 ```
-  
-2️⃣ Create Environment
-  
-Using Conda:
+Create a Virtual Environment with Python (3.13.9), and activate it.
 ```bash
-conda env create -f environment.yml
-conda activate blackScholesPricer
+pip install -r requirements.txt
+python app.py
 ```
 
-3️⃣ Run the App
-```python
-python app.py
-```  
-Open your browser at: 
-http://127.0.0.1:8050  
-  
-📸 Example Screenshot  
+### 3️⃣ Open your browser at: http://127.0.0.1:8050  
+
+## 
+## 📸 Example Screenshot  
 ![App Preview](assets/preview.png)  
     
-📦 Dependencies  
-  Python ≥ 3.9  
-  Dash  
-  Plotly  
-  QuantLib  
-  Pandas  
-  NumPy    
+## 📦 Dependencies  
+  Python = 3.13.9    
+  Dash = 2.14.2  
+  Plotly = 6.3.0  
+  QuantLib = 1.40  
+  Pandas = 2.3.3  
+  NumPy = 2.3.3  
   
-📜 License  
+## 📜 License  
   
 This project is licensed under the MIT License.  
 You are free to use, modify, and distribute it with attribution.
     
-👤 Author  
+## 👤 Author  
   
 Anjaneeya B  
 GitHub: @AnjaneeyaB  
