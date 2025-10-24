@@ -25,7 +25,7 @@ Black-Scholes-Option-Pricer/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/Black-Scholes-Option-Pricer.git
+git clone https://github.com/AnjaneeyaB/Black-Scholes-Option-Pricer.git
 cd Black-Scholes-Option-Pricer
 ```
   
