@@ -5,16 +5,17 @@ html, body {
     overflow-x: hidden;
 }
 
-.rc-slider-tooltip {
-  transform: translateY(-5px) !important;
+.rc-slider {
+    width: 100%;
 }
 
-.rc-slider {
-  width: 100% !important;
+.rc-slider-tooltip,
+.rc-slider-tooltip-inner {
+    transform: none;
 }
 
 .rc-slider-tooltip-inner {
-  background-color: #262B3C !important;
-  color: #FAFAFA !important;
-  border: none !important;
+    background-color: #262B3C;
+    color: #FAFAFA;
+    border: none;
 }

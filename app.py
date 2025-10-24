@@ -16,7 +16,7 @@ app.layout = html.Div(
         # Sidebar
         html.Div(
             style={
-                'width': '22%',
+                'width': '13%',
                 'padding': '40px 25px',
                 'backgroundColor': '#161A23',
                 'display': 'flex',
@@ -55,34 +55,6 @@ app.layout = html.Div(
 
                 # Heatmap Parameters section
                 html.H3("📊 Heatmap Parameters", style={'marginTop': '30px', 'fontWeight': '600'}),
-
-                html.Label("Your Call/Put Prices"),
-                html.Div(
-                    style={
-                        'display': 'flex',
-                        'gap': '10px',
-                        'width': '100%'
-                    },
-                    children=[
-                        html.Div([
-                            html.Label("Call"),
-                            dcc.Input(id='user_call_price', type='number', step=0.1,
-                                    style={'backgroundColor': '#262B3C', 'color': 'white', 'borderRadius': '8px',
-                                            'border': 'none', 'padding': '8px', 'width': '100%'})
-                        ], style={'flex': 1}),
-                        html.Div(style={
-                            'width': '1px',
-                            'height': '40px',
-                            'backgroundColor': 'transparant'
-                        }),
-                        html.Div([
-                            html.Label("Put"),
-                            dcc.Input(id='user_put_price', type='number', step=0.1,
-                                    style={'backgroundColor': '#262B3C', 'color': 'white', 'borderRadius': '8px',
-                                            'border': 'none', 'padding': '8px', 'width': '100%'})
-                        ], style={'flex': 1})
-                    ]
-                ),
 
                 html.Label("Variance Range"),
                 dcc.RangeSlider(
@@ -173,8 +145,7 @@ def update_prices(S, K, T, r, sigma, var_range, spot_range):
         var_range[0],
         var_range[1],
         spot_range[0],
-        spot_range[1],
-        showscale=True
+        spot_range[1]
     )
     call_fig.update_layout(
         autosize=True,
@@ -220,19 +191,19 @@ def update_prices(S, K, T, r, sigma, var_range, spot_range):
             html.Div(
                 style={
                     'display': 'flex',
-                    'justifyContent': 'center',
+                    'justifyContent': 'flex-start',
                     'alignItems': 'flex-start',
-                    'gap': '40px',
-                    'width': '100%'
+                    'gap': '55px',
+                    'width': '105%'
                 },
                 children=[
                     html.Div([
                         html.H4("Call Option Heatmap", style={'textAlign': 'center'}),
-                        dcc.Graph(figure=call_fig, style={'width': '600px', 'height': '500px'})
+                        dcc.Graph(figure=call_fig, style={'width': '600px', 'height': '500px', 'marginLeft': '-15px', 'transform': 'scale(0.90)'})
                     ]),
                     html.Div([
                         html.H4("Put Option Heatmap", style={'textAlign': 'center'}),
-                        dcc.Graph(figure=put_fig, style={'width': '600px', 'height': '500px'})
+                        dcc.Graph(figure=put_fig, style={'width': '600px', 'height': '500px', 'marginLeft': '-5px', 'transform': 'scale(0.89)'})
                     ])
                 ]
             )

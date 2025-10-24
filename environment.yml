@@ -2,10 +2,10 @@ name: blackScholesPricer
 channels:
   - defaults
 dependencies:
-  - python
-  - pandas
-  - dash
-  - plotly
-  - pip
+  - python=3.13.9
+  - pandas=2.3.3
+  - dash=2.14.2
+  - plotly=6.3.0
+  - pip=25.2
   - pip:
-      - QuantLib
+      - QuantLib==1.40
